@@ -5,7 +5,10 @@ import paginationFactory from "react-bootstrap-table2-paginator";
 
 const CountriesTable = ({ filteredCountries }) => {
     
-
+  const selectRow = {
+    mode: 'checkbox',
+    style: { background: '#888' }
+  };
 
   const columns = [
     {
@@ -28,6 +31,7 @@ const CountriesTable = ({ filteredCountries }) => {
      keyField="name"
      data={filteredCountries}
      columns={columns}
+     selectRow={ selectRow }
      pagination={paginationFactory()}
      />
     </div>
