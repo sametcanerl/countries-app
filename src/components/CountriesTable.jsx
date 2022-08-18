@@ -5,9 +5,7 @@ import paginationFactory from "react-bootstrap-table2-paginator";
 
 const CountriesTable = ({ filteredCountries }) => {
     
-const im = ()=>{
-    return <img src={filteredCountries.flag} alt="" />
-}
+
 
   const columns = [
     {
